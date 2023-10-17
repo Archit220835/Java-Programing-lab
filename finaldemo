@@ -1,0 +1,13 @@
+class FinalDemo{
+    public final void display(){
+        System.out.println("This is a final method");
+    }
+}
+
+class Main extends FinalDemo{
+    public final void display(){
+        System.out.println("The final metho is overridden ");
+       
+
+    }
+}

@@ -1,0 +1,65 @@
+public class Automobile {
+    public void start() {
+        System.out.println("Engine starts running");
+    }
+
+    public void stop() {
+        System.out.println("Engine stops running");
+    }
+
+    public void seatings() {
+    }
+}
+
+class Car extends Automobile {
+    public void no_of_tyres() {
+        System.out.println("There are 4 tyres");
+    }
+
+    public void fuel() {
+        System.out.println("Petrol");
+    }
+
+    public void fuel(String fuel) {
+        System.out.println("Also runs on " + fuel);
+    }
+
+    public void seatings() {
+        System.out.println("4 seatings");
+    }
+}
+
+class Bike extends Automobile {
+    public void no_of_tyres() {
+        System.out.println("There are two tyres");
+    }
+
+    public void fuel() {
+        System.out.println("Petrol");
+    }
+
+    public void seatings() {
+        System.out.println("2 seatings");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car car = new Car();
+        Bike bike = new Bike();
+
+        car.start();
+        car.no_of_tyres();
+        car.fuel("Diesel");
+        car.seatings();
+        car.stop();
+
+        System.out.println();
+
+        bike.start();
+        bike.no_of_tyres();
+        bike.fuel();
+        bike.seatings();
+        bike.stop();
+    }
+}
